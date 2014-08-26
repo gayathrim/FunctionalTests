@@ -20,15 +20,15 @@ And(/^I choose to share the product information by email to my friend at "([^"]*
   amazon_product_page=ProductDescriptionPage.new(@session)
   @product_details_before_sharing=amazon_product_page.collect_product_unique_details
   email_content= amazon_product_page.share_by_email_to(email).partition("Link:")
-  @product_details_before_sharing[:email_content]= email_content[0]
+  @product_details_before_sharing[:email_content]= email_content[0].strip
   @product_details_before_sharing[:sku]=email_content[2].split('/').last
   @session.driver.browser.quit
 end
 
 Then(/^she should be seeing the same product details like when I shared$/) do
   amazon_product_page=ProductDescriptionPage.new(@session)
-  @product_info_on_email_link=amazon_product_page.collect_product_unique_details
-  p @product_info_on_email_link
+  @product_details_on_email.merge!(amazon_product_page.collect_product_unique_details)
+  raise "Product details did not match! Expected:\n #{@product_details_before_sharing} \n Email:\n #{@product_details_on_email} " unless @product_details_on_email.eql?(@product_details_before_sharing)
 end
 
 When(/^she visits the product link shared$/) do

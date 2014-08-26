@@ -17,7 +17,7 @@ class InboxPrimaryPage
 
   def open_email_from_amazon
     wait_for_inbox_to_load
-    @session.find("span", :text => EMAIL_FROM_AMAZON).click
+    @session.first("span", :text => EMAIL_FROM_AMAZON).click
   end
 
   def collect_product_info_from_mail

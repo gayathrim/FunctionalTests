@@ -11,13 +11,14 @@ When(/^she opens my email$/) do
 end
 
 Then(/^she should be seeing the same email content as sent from amazon$/) do
-  email_content=@inboxPrimaryTab.collect_product_info_from_mail
-  raise "Email content did not match" unless (@product_details_before_sharing[:email_content]==email_content)
+  @product_details_on_email=Hash.new
+  @product_details_on_email[:email_content]=@inboxPrimaryTab.collect_product_info_from_mail
+  raise "Email content did not match. Expected: '#{@product_details_before_sharing[:email_content]}' Got: '#{@product_details_on_email[:email_content]}'" unless (@product_details_before_sharing[:email_content]==@product_details_on_email[:email_content])
 end
 
 And(/^the sku of the product shared in the link should be the original sku of the product$/) do
   @product_link_shared_in_email= @inboxPrimaryTab.get_product_link_from_email
-  sku=@product_link_shared_in_email.split('/').last(2)[0]
-  raise "Sku did not match" unless (@product_details_before_sharing[:sku]==sku)
+  @product_details_on_email[:sku]=@product_link_shared_in_email.split('/').last(2)[0]
+  raise "Sku did not match" unless (@product_details_before_sharing[:sku]==@product_details_on_email[:sku])
   @session.driver.browser.quit
 end

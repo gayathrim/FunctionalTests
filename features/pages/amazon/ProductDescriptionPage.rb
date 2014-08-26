@@ -2,7 +2,7 @@ class ProductDescriptionPage
 
   PRODUCT_TITLE="#productTitle"
   BRAND="#brand"
-  AVERAGE_RATING="#acrPopover"
+  AVERAGE_RATING="#ratingStars"
   PRICE="#priceblock_ourprice"
   SHIPPING_TYPE="#ourprice_shippingmessage"
   COLOR="#variation_color_name"
