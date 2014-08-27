@@ -1,6 +1,5 @@
 # ---Given ---
 Given(/^I login to amazon with username "([^"]*)" and password "([^"]*)"$/) do |email, password|
-  # @session=Capybara::Session.new(:selenium)
   @session=Capybara.current_session
   amazon_sign_in_page=SignInPage.new(@session)
   amazon_sign_in_page.goto_sign_in_page
@@ -28,10 +27,10 @@ And(/^I choose to share the product information by email to my friend at "([^"]*
   @product_details_before_sharing=amazon_product_page.collect_product_unique_details
   email_content= amazon_product_page.share_by_email_to(email).partition("Link:")
   @product_details_before_sharing[:email_content]= email_content[0].strip
+  # Defect in amazon system
   @product_details_before_sharing[:sku]=email_content[2].split('/').last
   p "Unique Product Details Collected: \n"
   p @product_details_before_sharing
-  # @session.driver.browser.quit
 end
 
 # ---- Then ----
