@@ -7,3 +7,4 @@ Pending:
 3. cucumber.yml
 4. screenshots & reports
 5. Comments
+6. Add Read me
