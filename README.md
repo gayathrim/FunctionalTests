@@ -1,6 +1,6 @@
 
 1. Runs with ruby 1.9.3 and above
-2. Do 'bundle install' from ProductsFunctionalTests folder
+2. Do 'bundle install' from FunctionalTests folder
 3. 'rake share_feature' will run the share by email feature tests.
 4. Output folder has screenshots and report.html file
 5. On multiple test runs, amazon starts showing captcha images, which is not handled. In such cases, register new user in amazon and use the same.
