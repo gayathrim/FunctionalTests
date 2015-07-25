@@ -5,7 +5,7 @@ Feature: Share product details to friends from amazon.
     Given I login to amazon with username "1qwertyui123*123@gmail.com" and password "amazon123*"
     When I search for product "bose"
 
-  @bose @email_sharing @non_deterministic @x
+  @bose @email_sharing @non_deterministic
   Scenario Outline: Verify bose product details
     Given I login to amazon with username "<amazon_username>" and password "<amazon_password>"
     When I search for product "<product>"
