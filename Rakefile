@@ -26,6 +26,7 @@ task :non_deterministic do
       p allNDFailures
       if(!allNDFailures.include?(false))
         set_non_deterministic_property_in_go(get_current_pipeline_counter)
+        exit 1
       end
     end
 end
