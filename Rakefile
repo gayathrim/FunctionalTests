@@ -26,7 +26,7 @@ task :non_deterministic do
       if(allNDFailures.include?(false))
         exec('exit 1')
       else
-        exec('exit 0')
+        exec('exit 10')
       end
     end
 end
