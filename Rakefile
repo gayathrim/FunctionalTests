@@ -7,12 +7,16 @@ require 'cucumber/rake/task'
 
 
 task :non_deterministic do
+    system("rm failures.txt")
     run_successfull = run_rake_task("bose")
+
     if !run_successfull
       allNDFailures = []
       failedTags = []
       File.open('failures.txt') do |file|
-        failedTags << file.readline()
+        file.each_line do |line|
+          failedTags << line
+        end
       end
       p failedTags
       failedTags.each do |tagsPerScenario|

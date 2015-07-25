@@ -10,8 +10,10 @@ After do |scenario|
     FileUtils.mv("./#{image_name}", File.join(File.dirname(__FILE__), "..", "..", "output"))
     embed image_name, 'image/png'
 
-    File.open('failures.txt', 'w') { |file|
+    File.open('failures.txt', 'a') { |file|
       p 'File writing..'
-      file.write(scenario.source_tag_names) }
+      file << scenario.source_tag_names
+      file << "\n"
+     }
   end
 end
