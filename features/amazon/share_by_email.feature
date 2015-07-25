@@ -1,6 +1,6 @@
 Feature: Share product details to friends from amazon.
 
-  @bose @non_deterministic
+  @bose @non_deterministic @email_sharing
   Scenario: Verify product details shared in email matches the original product details
     Given I login to amazon with username "qwertyui123*123@gmail.com" and password "amazon123*"
     When I search for product "bose"
