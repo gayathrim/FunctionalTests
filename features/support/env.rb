@@ -2,7 +2,7 @@ require 'rubygems'
 require 'bundler'
 require 'capybara/cucumber'
 require 'gmail'
-require 'cucumber'
+
 
 #Configuring Capybara's default driver to selenium
 Capybara.default_driver = :selenium

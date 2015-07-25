@@ -9,5 +9,9 @@ After do |scenario|
     @session.save_screenshot image_name
     FileUtils.mv("./#{image_name}", File.join(File.dirname(__FILE__), "..", "..", "output"))
     embed image_name, 'image/png'
+
+    File.open('failures.txt', 'w') { |file|
+      p 'File writing..'
+      file.write(scenario.source_tag_names) }
   end
 end

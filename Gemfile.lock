@@ -32,6 +32,7 @@ GEM
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (0.9.6)
     ruby-gmail (0.3.1)
       mail (>= 2.2.1)
       mime (>= 0.1)
@@ -53,5 +54,6 @@ PLATFORMS
 DEPENDENCIES
   capybara
   cucumber
+  rake
   ruby-gmail
   selenium-webdriver (~> 2.45.0)
