@@ -1,0 +1,21 @@
+db:
+  development:
+    host: 192.168.202.222
+    port: 1521
+    username: kcrm_dev
+    password: kcrm_dev
+    database: XE
+
+  ci:
+    host: 192.168.202.222
+    port: 1521
+    username: kcrmcne
+    password: kcrmcne
+    database: XE
+
+  staging:
+    host: 192.168.202.222
+    port: 1521
+    username: kcrmsta
+    password: kcrmsta
+    database: XE

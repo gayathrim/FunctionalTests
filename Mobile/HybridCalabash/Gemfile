@@ -1,0 +1,8 @@
+source :rubygems
+
+gem 'calabash-android'
+gem 'calabash-cucumber'
+gem 'chronic'
+gem 'ruby-oci8'
+gem 'activerecord', '3.2.13'
+gem 'activerecord-oracle_enhanced-adapter', '1.4.2'

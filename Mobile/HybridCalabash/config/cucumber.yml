@@ -1,0 +1,2 @@
+android: --tags ~@wip --tags ~@manual --tags ~@android_wip PLATFORM=android -r features/support -r features/android_support -r features/pages -r features/step_definitions
+ios: --tags ~@wip --tags ~@defect --tags ~@manual --tags ~@android PLATFORM=ios -r features/support -r features/iphone_support -r features/pages -r features/step_definitions
