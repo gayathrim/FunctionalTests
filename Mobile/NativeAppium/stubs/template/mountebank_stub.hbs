@@ -1,0 +1,30 @@
+{
+  "port": "{{port}}",
+  "protocol": "{{protocol}}",
+  "name": "{{name}}",
+  "stubs": [
+  {{#imposters}}
+    { "responses": [{
+        "is": {{{response}}},
+        "_behaviors": {
+            "wait": {{wait}}
+          }
+      }],
+      "predicates": [{
+        "and": [{
+          "equals": {
+            "path": "{{{path}}}",
+            "method": "{{method}}"
+          }
+        }]
+      }]
+    },
+  {{/imposters}}
+  {
+    "responses": [{
+      "is": {
+        "statusCode": 404
+      }
+    }]
+  }
+]}

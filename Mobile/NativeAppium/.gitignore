@@ -1,0 +1,15 @@
+#Node.js
+node_modules
+
+#Appium
+reports/
+apps/
+
+#OS X
+.DS_Store
+log/
+
+#templates
+appium.txt
+appiumAndroid.txt
+appiumIos.txt
