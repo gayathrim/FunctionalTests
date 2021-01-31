@@ -6,7 +6,7 @@
     "async": "^0.9.0",
     "chai": "^2.2.0",
     "chai-as-promised": "^4.3.0",
-    "chance": "^0.7.3",
+    "chance": "^0.8.0",
     "colors": "^1.0.3",
     "cucumber": "^0.4.8",
     "forever-monitor": "^1.5.2",
