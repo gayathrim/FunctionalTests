@@ -8,7 +8,7 @@
     "chai-as-promised": "^4.3.0",
     "chance": "^0.7.3",
     "colors": "^1.0.3",
-    "cucumber": "^0.4.8",
+    "cucumber": "^0.6.0",
     "forever-monitor": "^1.5.2",
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
