@@ -8,9 +8,9 @@
     "chai-as-promised": "^4.3.0",
     "chance": "^0.7.3",
     "colors": "^1.0.3",
-    "cucumber": "^0.4.8",
+    "cucumber": "^0.6.0",
     "forever-monitor": "^1.5.2",
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-cucumberjs": "^0.5.2",
     "grunt-mkdir": "~0.1.2",
@@ -20,7 +20,7 @@
     "q": "^1.2.0",
     "request": "^2.55.0",
     "string-template": "~0.2.0",
-    "wd": "^0.3.11"
+    "wd": "^1.0.0"
   },
   "devDependencies": {
     "grunt-cli": "~0.1.13",
