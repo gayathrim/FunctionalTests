@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'cucumber'
-gem 'capybara'
+gem 'capybara', '>= 2.2.1'
 gem 'selenium-webdriver', '~> 2.45.0'
 gem 'ruby-gmail'
 gem 'rake'
