@@ -1,7 +1,7 @@
 source :rubygems
 
-gem 'calabash-android'
-gem 'calabash-cucumber'
+gem 'calabash-android', '>= 0.4.8'
+gem 'calabash-cucumber', '>= 0.17.0'
 gem 'chronic'
 gem 'ruby-oci8'
 gem 'activerecord', '3.2.13'
