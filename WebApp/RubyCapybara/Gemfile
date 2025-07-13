@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'cucumber'
-gem 'capybara'
-gem 'selenium-webdriver', '~> 2.45.0'
+gem 'capybara', '>= 2.2.1'
+gem 'selenium-webdriver', '~> 2.46.1'
 gem 'ruby-gmail'
 gem 'rake'
 gem 'rest-client'
