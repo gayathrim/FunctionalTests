@@ -14,7 +14,7 @@
     "grunt-contrib-clean": "^0.6.0",
     "grunt-cucumberjs": "^0.5.2",
     "grunt-mkdir": "~0.1.2",
-    "js-yaml": "^3.3.0",
+    "js-yaml": "^4.1.1",
     "lodash": "^3.6.0",
     "mustache": "^2.0.0",
     "q": "^1.2.0",
